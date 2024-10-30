@@ -7,5 +7,19 @@ def main(args: Array[String]): Unit =
 { 
     var input = readLine("Enter your name: ")
     println(s"Hello $input") 
+
+    println("\n\nAll number including 10")
+    for(i <- 1 to 10){
+        println(s"i = $i")
+    }
+
+    println("\n\nAll alphabets excluding z")
+    for(i <- 'a' until 'z') print(i)
+
+    println("\n\nOnly Even Numbers")
+    for(i <- 0 to 10 if i%2==0) println(i)
+
+    println("\n\nImmutable Variables (val)")
+    val 
 } 
 }
