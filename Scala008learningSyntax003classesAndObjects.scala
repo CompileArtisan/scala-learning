@@ -4,10 +4,13 @@ object Main {
     println(x.getName())
     x.setName("Varun")
     println(x.getName())
+
+    var y = new Person()
+    println(y.getName())
   }
 }
 
-class Person(name: String, age: Int, weight: Float) {
+class Person(name: String = "Not-Initialized", age: Int = 0, weight: Float = 0) {
 
   var Name = name
   var Age = age
