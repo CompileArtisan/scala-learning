@@ -1,7 +1,7 @@
 object Main {
   def main (args: Array[String]): Unit =  {
-    var x = new Person("rahul", -99) // instance of class is invoked
-    var y = Person("rahul", -99)     // companion object is invoked
+    var x = new Person("rahul", -99)  // instance of class is invoked
+    var y = Person("rahul", -99)      // companion object is invoked
 
     x.about()
     y.about()
