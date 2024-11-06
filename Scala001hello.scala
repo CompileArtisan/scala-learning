@@ -20,6 +20,14 @@ def main(args: Array[String]): Unit =
     for(i <- 0 to 10 if i%2==0) println(i)
 
     println("\n\nImmutable Variables (val)")
-    val 
+    val x = 10
+    // x = 20 // This will give error
+
+    println("\n\nMutable Variables (var)")
+    var y = 10
+    y = 20
+    println(y)
+
+    
 } 
 }
