@@ -9,7 +9,9 @@ object Main{
     println("type 6 for converting scala range to collections")
     println("type 7 for reassigning var")
     println("type 8 for while ")
+    println("type 9 for arrays")
 
+    // All class names should be capitalized, and method names shouldn't
 
     var decision_as_string = readLine()
     val decision = decision_as_string.toInt // toInt parses int from string
@@ -73,6 +75,30 @@ object Main{
       print("\n")
 
 
+    }
+
+    // working with arrays
+    else if(decision == 9) {
+      var students = new Array[String](4)
+      students(0) = "student0"
+      students(1) = "student1"
+      students(2) = "student2"
+      students.update(3, "student3") //another way of working with arrays
+      println(students) // prints some object reference
+      for( x <- students ) println(x)
+      for(i <- 0 to 2) println()
+
+      for(i <- 0.until(students.length)) println(students.apply(i))
+
+      // students(i) when accessing value is the same as students.apply(i)
+      // students(i) when updating value is the same as students.update(i, new value)
+      // 0 to 3   <=>   0.to(3)
+      // 1 + 2   <=>   1.+(2)
+
+      println(1.+(2))
+
+      var students = Array("zero", "one", "two", "three")
+      // = var students = Array.apply("zero", "one", "two", "three")
     }
 
 

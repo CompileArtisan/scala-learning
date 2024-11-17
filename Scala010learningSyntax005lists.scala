@@ -1,5 +1,7 @@
 object Main {
   def main(args: Array[String]): Unit = {
+    // java's lists are mutable, but scala's are immutable
+
     // immutable list
     val list1: List[String] = List("Plain Donut","Strawberry Donut","Chocolate Donut")
     println(s"list1 = ${list1}")
@@ -25,8 +27,6 @@ object Main {
     // empty lists
     val emptyList: List[String] = List.empty[String]
     println(s"Empty list = $emptyList")
-
-
 
   }
 }
